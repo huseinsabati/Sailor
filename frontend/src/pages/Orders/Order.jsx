@@ -90,7 +90,7 @@ const Order = () => {
   return isLoading ? (
     <Loader />
   ) : error ? (
-    <Message variant="danger">{error.data.message}</Message>
+    <Message variant="danger">{error.data.message}</Message> || 'No message available'
   ) : (
     <div className="container flex flex-col ml-[10rem] md:flex-row">
       <div className="md:w-2/3 pr-4">
@@ -167,9 +167,9 @@ const Order = () => {
           </p>
 
           {order.isPaid ? (
-            <Message variant="success">Paid on {order.paidAt}</Message>
+            <Message variant="success">Paid on {order.paidAt}</Message> || 'No message available'
           ) : (
-            <Message variant="danger">Not paid</Message>
+            <Message variant="danger">Not paid</Message> || 'No message available'
           )}
         </div>
 
