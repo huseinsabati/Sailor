@@ -109,7 +109,7 @@ const PlaceOrder = () => {
               </li>
             </ul>
 
-            {error && <Message variant="danger">{error.data.message}</Message>}
+            {error && <Message variant="danger">{error.data.message}</Message>|| 'No message available'}
 
             <div>
               <h2 className="text-2xl font-semibold mb-4">Shipping</h2>
