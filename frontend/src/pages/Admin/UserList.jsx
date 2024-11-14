@@ -63,7 +63,7 @@ const UserList = () => {
       ) : error ? (
         <Message variant="danger">
           {error?.data?.message || error.error}
-        </Message>
+        </Message> || 'No message available'
       ) : (
         <div className="flex flex-col md:flex-row">
           {/* <AdminMenu /> */}
