@@ -78,7 +78,7 @@ const Product = () => {
       ) : error ? (
         <Message variant="danger">
           {error?.data?.message || error.error}
-        </Message>
+        </Message> || 'No message available'
       ) : (
         <>
           <div className="flex flex-wrap relative items-between mt-[2rem] ml-[10rem]">
