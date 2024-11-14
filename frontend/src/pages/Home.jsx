@@ -17,7 +17,7 @@ const Home = () => {
       ) : isError ? (
         <Message variant="danger">
           {isError?.data.message || isError.error}
-        </Message>
+        </Message> || 'No message available'
       ) : (
         <>
           <div className="flex justify-between items-center">
