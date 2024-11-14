@@ -31,7 +31,7 @@ const ProductCarousel = () => {
       {isLoading ? null : error ? (
         <Message variant="danger">
           {error?.data?.message || error.error}
-        </Message>
+        </Message> || 'No message available'
       ) : (
         <Slider
           {...settings}
